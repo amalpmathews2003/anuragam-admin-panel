@@ -7,12 +7,13 @@ import { ApprovedMain } from "./components/approved/approved.jsx";
 import { NavBar } from "./components/common/navbar.jsx";
 
 function App() {
+  // console.log()
   return (
     <BrowserRouter basename={process.env.PUBLIC_URL}>
       <NavBar></NavBar>
       <Routes>
-        <Route path="/" element={<Main />}></Route>
-        <Route path="/approved" element={<ApprovedMain />}></Route>
+        <Route path={`/`} element={<Main />}></Route>
+        <Route path={`/approved`} element={<ApprovedMain />}></Route>
       </Routes>
     </BrowserRouter>
   );
