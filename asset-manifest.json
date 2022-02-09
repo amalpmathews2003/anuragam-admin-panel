@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/anuragam-admin-panel/static/css/main.56e6221f.css",
+    "main.js": "/anuragam-admin-panel/static/js/main.79c38b92.js",
+    "static/js/787.89c24665.chunk.js": "/anuragam-admin-panel/static/js/787.89c24665.chunk.js",
+    "index.html": "/anuragam-admin-panel/index.html",
+    "main.56e6221f.css.map": "/anuragam-admin-panel/static/css/main.56e6221f.css.map",
+    "main.79c38b92.js.map": "/anuragam-admin-panel/static/js/main.79c38b92.js.map",
+    "787.89c24665.chunk.js.map": "/anuragam-admin-panel/static/js/787.89c24665.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.56e6221f.css",
+    "static/js/main.79c38b92.js"
+  ]
+}
