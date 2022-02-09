@@ -8,7 +8,7 @@ import { NavBar } from "./components/common/navbar.jsx";
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <NavBar></NavBar>
       <Routes>
         <Route path="/" element={<Main />}></Route>
