@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "https://amalpmathews2003.github.io/anuragam-admin-panel/static/css/main.56e6221f.css",
-    "main.js": "https://amalpmathews2003.github.io/anuragam-admin-panel/static/js/main.bb3006f3.js",
-    "static/js/787.89c24665.chunk.js": "https://amalpmathews2003.github.io/anuragam-admin-panel/static/js/787.89c24665.chunk.js",
-    "index.html": "https://amalpmathews2003.github.io/anuragam-admin-panel/index.html",
-    "main.56e6221f.css.map": "https://amalpmathews2003.github.io/anuragam-admin-panel/static/css/main.56e6221f.css.map",
-    "main.bb3006f3.js.map": "https://amalpmathews2003.github.io/anuragam-admin-panel/static/js/main.bb3006f3.js.map",
-    "787.89c24665.chunk.js.map": "https://amalpmathews2003.github.io/anuragam-admin-panel/static/js/787.89c24665.chunk.js.map"
+    "main.css": "/anuragam-admin-panel/static/css/main.56e6221f.css",
+    "main.js": "/anuragam-admin-panel/static/js/main.68c89317.js",
+    "static/js/787.89c24665.chunk.js": "/anuragam-admin-panel/static/js/787.89c24665.chunk.js",
+    "index.html": "/anuragam-admin-panel/index.html",
+    "main.56e6221f.css.map": "/anuragam-admin-panel/static/css/main.56e6221f.css.map",
+    "main.68c89317.js.map": "/anuragam-admin-panel/static/js/main.68c89317.js.map",
+    "787.89c24665.chunk.js.map": "/anuragam-admin-panel/static/js/787.89c24665.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.56e6221f.css",
-    "static/js/main.bb3006f3.js"
+    "static/js/main.68c89317.js"
   ]
 }
