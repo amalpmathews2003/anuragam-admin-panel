@@ -23,7 +23,7 @@ export function ApprovedMain() {
               <Col>Name</Col>
               <Col>Message</Col>
               <Col>Contact</Col>
-              <Col>Dis Approve</Col>
+              <Col>Disapprove</Col>
             </Row>
           </Alert>
           {submissions.map((submission) => (

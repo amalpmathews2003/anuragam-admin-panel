@@ -7,8 +7,8 @@ export function Submission({ submission, handleSwitchChange }) {
       <Col>{submission.message}</Col>
       <Col>{submission.contact}</Col>
       <Col>
-        <Form>
           <Form.Check
+            defaultChecked={"true"}
             type="switch"
             id={`${submission.id}`}
             // label="Check this switch"
@@ -16,7 +16,6 @@ export function Submission({ submission, handleSwitchChange }) {
               handleSwitchChange(submission.id);
             }}
           ></Form.Check>
-        </Form>
       </Col>
       {/* {submission.id} */}
     </Row>
