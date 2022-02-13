@@ -16,9 +16,14 @@ export function ApprovedMain() {
 
   return (
     <div>
+      <Alert variant="secondary">
+        <center>
+          <h1>Approved Messages</h1>
+        </center>
+      </Alert>
       {submissions ? (
         <Container fluid>
-          <Alert >
+          <Alert>
             <Row>
               <Col>Name</Col>
               <Col>Message</Col>

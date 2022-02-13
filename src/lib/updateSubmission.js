@@ -5,6 +5,14 @@ export async function updateSubmission(submissionId,val) {
   const submission = doc(db, "submissions", submissionId);
 
   await updateDoc(submission, {
-    confirm: `${val}`,
+    confirm: val,
+  });
+}
+
+export async function updateSubmissionSongs(submissionId,val) {
+  const submission = doc(db, "songSubmissions", submissionId);
+
+  await updateDoc(submission, {
+    confirm: val,
   });
 }

@@ -1,40 +1,45 @@
 import { useState, useEffect } from "react";
 import { Alert, Col, Container, Row } from "react-bootstrap";
-import { getSubmissionsSongs } from "../../lib/getSubmissions";
-import { getSubmissions } from "../../lib/getSubmissions";
-import { updateSubmission } from "../../lib/updateSubmission";
+import {
+  getApprovedSongs,
+  getApprovedSubmissions,
+} from "../../../lib/getApprovedSubmissions";
+import {
+  updateSubmission,
+  updateSubmissionSongs,
+} from "../../../lib/updateSubmission";
 import { Submission } from "./submission";
 
-export function Main() {
+export function ApprovedMainSongs() {
   const [submissions, setSubmissions] = useState(null);
   useEffect(() => {
-    getSubmissions(setSubmissions);
+    getApprovedSongs(setSubmissions);
   }, []);
 
   function handleSwitchChange(submissionId) {
-    updateSubmission(submissionId, 1);
+    updateSubmissionSongs(submissionId, 0);
   }
 
   return (
     <div>
       <Alert variant="secondary">
         <center>
-        <h1>Dispproved Messages</h1>
+          <h1>Approved Songs</h1>
         </center>
       </Alert>
 
       {submissions ? (
         <Container fluid>
-          <Alert variant="success">
+          <Alert>
             <Row>
               <Col>Name</Col>
-              <Col>Message</Col>
+              <Col>Song</Col>
               <Col>Contact</Col>
-              <Col>Approve</Col>
+              <Col>Disapprove</Col>
             </Row>
           </Alert>
           {submissions.map((submission) => (
-            <Alert key={submission.id}>
+            <Alert key={submission.id} variant="success">
               <Submission
                 submission={submission}
                 handleSwitchChange={handleSwitchChange}

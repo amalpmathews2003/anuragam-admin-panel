@@ -1,25 +1,28 @@
 import { useState, useEffect } from "react";
 import { Alert, Col, Container, Row } from "react-bootstrap";
-import { getSubmissionsSongs } from "../../lib/getSubmissions";
-import { getSubmissions } from "../../lib/getSubmissions";
-import { updateSubmission } from "../../lib/updateSubmission";
+import { getSubmissionsSongs } from "../../../lib/getSubmissions";
+import { getSubmissions } from "../../../lib/getSubmissions";
+import {
+  updateSubmission,
+  updateSubmissionSongs,
+} from "../../../lib/updateSubmission";
 import { Submission } from "./submission";
 
-export function Main() {
+export function MainSongs() {
   const [submissions, setSubmissions] = useState(null);
   useEffect(() => {
-    getSubmissions(setSubmissions);
+    getSubmissionsSongs(setSubmissions);
   }, []);
 
   function handleSwitchChange(submissionId) {
-    updateSubmission(submissionId, 1);
+    updateSubmissionSongs(submissionId, 1);
   }
 
   return (
     <div>
       <Alert variant="secondary">
         <center>
-        <h1>Dispproved Messages</h1>
+          <h1>Disapproved Songs</h1>
         </center>
       </Alert>
 
@@ -28,7 +31,7 @@ export function Main() {
           <Alert variant="success">
             <Row>
               <Col>Name</Col>
-              <Col>Message</Col>
+              <Col>Song</Col>
               <Col>Contact</Col>
               <Col>Approve</Col>
             </Row>

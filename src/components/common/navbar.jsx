@@ -6,6 +6,7 @@ import {
   OverlayTrigger,
   Tooltip,
   Button,
+  NavDropdown,
 } from "react-bootstrap";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { auth } from "../firebase/firebase";
@@ -21,10 +22,26 @@ export function NavBar() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href={`${process.env.PUBLIC_URL}`}>Disapproved</Nav.Link>
+            {/* <Nav.Link href={`${process.env.PUBLIC_URL}`}>Disapproved</Nav.Link>
             <Nav.Link href={`${process.env.PUBLIC_URL}/approved`}>
               Approved
-            </Nav.Link>
+            </Nav.Link> */}
+            <NavDropdown title="Messages" id="basic-nav-dropdown">
+              <NavDropdown.Item href={`${process.env.PUBLIC_URL}`}>
+                Disapproved
+              </NavDropdown.Item>
+              <NavDropdown.Item href={`${process.env.PUBLIC_URL}/approved/message`}>
+                Approved
+              </NavDropdown.Item>
+            </NavDropdown>
+            <NavDropdown title="Songs" id="basic-nav-dropdown">
+              <NavDropdown.Item href={`${process.env.PUBLIC_URL}/disapproved/songs`}>
+                Disapproved
+              </NavDropdown.Item>
+              <NavDropdown.Item href={`${process.env.PUBLIC_URL}/approved/songs`}>
+                Approved
+              </NavDropdown.Item>
+            </NavDropdown>
             <Button
               variant="dark"
               onClick={() => {
